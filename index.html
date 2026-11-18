@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto acadêmico sobre criptografia e hash com Python.">
+    <title>Proteção de Informações | Sara Laís</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">🔐 SecureInfo</div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#criptografia">Criptografia</a>
+            <a href="#hash">Hash</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <span class="tag">PROJETO DA UNIDADE 2</span>
+            <h1>Proteção de <span>Informações</span></h1>
+            <p>Criptografia e Hash: protegendo dados e garantindo a
+               integridade das informações por meio da tecnologia.</p>
+            <a href="#criptografia" class="btn">Começar agora</a>
+        </section>
+
+        <section class="container" id="criptografia">
+            <div class="section-title">
+                <span>01 — CRIPTOGRAFIA</span>
+                <h2>Proteja suas mensagens</h2>
+                <p>Digite uma mensagem e uma senha para criptografar
+                   ou descriptografar seu conteúdo.</p>
+            </div>
+
+            <div class="panel">
+                <label for="mensagem">Mensagem ou texto criptografado</label>
+                <textarea id="mensagem" placeholder="Digite sua mensagem aqui..."></textarea>
+
+                <label for="senha">Senha de proteção</label>
+                <input type="password" id="senha" placeholder="Digite uma senha">
+
+                <div class="buttons">
+                    <button onclick="criptografar()">🔒 Criptografar</button>
+                    <button class="secondary" onclick="descriptografar()">🔓 Descriptografar</button>
+                </div>
+
+                <label for="resultado">Resultado</label>
+                <textarea id="resultado" readonly placeholder="O resultado aparecerá aqui..."></textarea>
+                <button class="copy" onclick="copiarResultado()">Copiar resultado</button>
+            </div>
+        </section>
+
+        <section class="container" id="hash">
+            <div class="section-title">
+                <span>02 — FUNÇÃO HASH</span>
+                <h2>Gerador de Hash SHA-256</h2>
+                <p>Transforme qualquer texto em um código hash
+                   para demonstrar a integridade dos dados.</p>
+            </div>
+
+            <div class="panel">
+                <label for="textoHash">Digite um texto</label>
+                <textarea id="textoHash" placeholder="Digite um texto para gerar o hash..."></textarea>
+
+                <button onclick="gerarHash()">Gerar Hash SHA-256</button>
+
+                <label for="hashResultado">Código Hash gerado</label>
+                <textarea id="hashResultado" readonly placeholder="O hash aparecerá aqui..."></textarea>
+
+                <button class="copy" onclick="copiarHash()">Copiar Hash</button>
+            </div>
+        </section>
+
+        <section class="container" id="sobre">
+            <div class="section-title">
+                <span>03 — APRENDIZADO</span>
+                <h2>O que aprendemos?</h2>
+            </div>
+
+            <div class="cards">
+                <div class="info-card">
+                    <div class="icon">🔐</div>
+                    <h3>Criptografia</h3>
+                    <p>É uma técnica que transforma informações em
+                       dados protegidos, permitindo que somente
+                       pessoas autorizadas tenham acesso ao conteúdo.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="icon">#️⃣</div>
+                    <h3>Hash</h3>
+                    <p>É uma função que transforma dados em uma sequência
+                       de caracteres de tamanho definido. É utilizada
+                       para verificar a integridade das informações.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="icon">🛡️</div>
+                    <h3>Segurança</h3>
+                    <p>Essas tecnologias ajudam a proteger informações
+                       pessoais, arquivos e comunicações digitais.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto da Unidade 2 — Proteção de Informações</p>
+        <p>Desenvolvido por <strong>Sara Laís Kmiecik</strong></p>
+        <p>Criptografia e Hash com Python | 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
